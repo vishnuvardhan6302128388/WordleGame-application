@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  animation: app 1s 1 forwards;
+}
+@keyframes app {
+  from {
+    transform: translateX(-300px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+.main-head {
+  font-size: 30px;
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  animation: head 1s 1 forwards;
+}
+@keyframes head {
+  from {
+    transform: translateX(1200px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.game-board {
+  margin-bottom: 20px;
+  margin-top: 100px;
+}
+
+.guess-row {
+  display: flex;
+  justify-content: center;
+  margin: 5px 0;
+  animation: row 1s 1 forwards;
+}
+
+@keyframes row {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(0px);
+  }
+}
+
+.letter {
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  border: 1px solid #ccc;
+}
+
+.green {
+  background-color: #4caf50;
+  color: white;
+}
+
+.yellow {
+  background-color: #ffeb3b;
+  color: black;
+}
+
+.gray {
+  background-color: #9e9e9e;
+  color: white;
+}
+
+.attempts-remaining {
+  font-size: 1.2rem;
+  margin-top: 20px;
+}
+
+input {
+  font-size: 1.2rem;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  border-radius: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-image: linear-gradient(to left, cyan, rgb(227, 26, 147));
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+.result-message {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.result-message.won {
+  color: green;
+}
+
+.result-message.lost {
+  color: red;
+}
