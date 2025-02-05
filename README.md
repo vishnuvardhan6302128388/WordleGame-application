@@ -15,23 +15,28 @@ In this project, let's build **Wordle-like game** by applying the concepts we ha
 <summary>Functionality to be added</summary>
 <br/>
 
-Core Features:
-   1.  Game Logic:
+<ul>Core Features:
+  <li> 1.  Game Logic:
    •  The user has 6 attempts to guess a 5-letter word.
    •  After each guess, display color-coded feedback:
    •  Green: Correct letter in the correct position.
    •  Yellow: Correct letter in the wrong position.
    •  Gray: Incorrect letter.
    •  Prevent invalid words from being submitted.
-   2.  UI/UX:
+   </li>
+   <li>2.  UI/UX:
    •  A grid displaying previous guesses with color-coded feedback.
    •  A message when the user wins or loses.
    •  A “New Game” button to restart the game.
-   3.  State Management:
+    </li>
+   <li>3.  State Management:
    •  Maintain guessed words, remaining attempts, and game status.
+    </li>
+ <li>
    4.  Performance & Code Quality:
    •  Keep the code clean, modular, and readable.
    •  Use proper component structure.
+   </li>
 
 > ### _Things to Keep in Mind_
 >
